@@ -1,6 +1,7 @@
 package com.kaptan.espionage.service;
 
 import com.google.gson.Gson;
+import com.kaptan.espionage.model.GitSecretInfos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +12,7 @@ import pl.project13.maven.git.GitRepositoryState;
 public class GitInfoPublisher {
 
     @Autowired
-    GitRepositoryState repositoryState;
+    GitSecretInfos repositoryState;
 
     @GetMapping(path = "/info/version")
     public String gitInfosRetrieve(){

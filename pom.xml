@@ -5,7 +5,7 @@
 
     <groupId>com.kaptan</groupId>
     <artifactId>espionage</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>espionage</name>
@@ -148,7 +148,7 @@
                         For details about why you might want to skip this, read this issue: https://github.com/ktoso/maven-git-commit-id-plugin/pull/65
                         The property is set to ``false`` by default to prevent the overriding of properties that may be unrelated to the project.
                     -->
-                    <injectAllReactorProjects>false</injectAllReactorProjects>
+                    <injectAllReactorProjects>true</injectAllReactorProjects>
 
                     <!-- @since 2.0.4 -->
                     <!-- true by default, controls whether the plugin will fail when no .git directory is found, when set to false the plugin will just skip execution -->
